@@ -34,6 +34,7 @@ public class Constantes {
 		public static final String RUTA_ARCHIVO_RESIDENTE = "D:\\fichero_residentes\\";	
 		public static final String Extension = ".txt";
 		public static final String Extensiondoc = ".doc";
+		public static final String Extensiondoc = ".xls";
 		
 	}
 	
