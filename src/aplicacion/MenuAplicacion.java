@@ -59,6 +59,7 @@ public class MenuAplicacion {
 		System.out.println(MenuPrincipal.MATRICULAR_VEHICULO+". Matricular Vehiculo");	
 		System.out.println(MenuPrincipal.COMENZAR_MES+". Comenzar mes");	
 		System.out.println(MenuPrincipal.GUARDAR_FICHERO+". Pagos Residentes");	
+		System.out.println(MenuPrincipal.SALIR+". Salir");
 		return teclado.nextInt();
 		 
 	}
