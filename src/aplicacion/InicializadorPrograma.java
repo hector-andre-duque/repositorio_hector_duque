@@ -7,6 +7,11 @@ import administracion.impl.RegistroVehiculoImpl;
 import tipos.Vehiculo;
 import utilidades.Constantes;
 
+/**
+ * Método que inicializa la aplicación
+ * @author ubeimar.vargas
+ *
+ */
 public class InicializadorPrograma {
 	
 	static Scanner teclado;
@@ -15,8 +20,7 @@ public class InicializadorPrograma {
 		
 		MenuAplicacion menuAplicacion = new MenuAplicacion();
 		
-		menuAplicacion.inicializarMenuPrincipal();
-			
+		menuAplicacion.inicializarMenuPrincipal();			
 		
 	}
 

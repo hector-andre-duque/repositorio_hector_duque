@@ -15,6 +15,11 @@ import utilidades.Constantes.EstadoVehiculo;
 import utilidades.Constantes.MenuPrincipal;
 import utilidades.Constantes.TipoVehiculo;
 
+/**
+ * Clase que maneja todo el menú de la aplicación  
+ * @author ubeimar.vargas
+ *
+ */
 public class MenuAplicacion {
 	
 	Scanner teclado ;	
@@ -50,6 +55,10 @@ public class MenuAplicacion {
 	}
 	
 
+	/**
+	 * Método que muestra en pantalla el menú principal
+	 * @return
+	 */
 	public int menuInicial() {
 		
 		System.out.println("==========================================================================");
@@ -64,6 +73,10 @@ public class MenuAplicacion {
 		 
 	}
 	
+	
+	/**
+	 * Método que muestra el menú al digitar la placa de un vehículo
+	 */
 	public void menuDigitarPlaca() {
 		String nroPlaca;
 		int opcion;  
@@ -103,7 +116,11 @@ public class MenuAplicacion {
 		
 	}	
 	
-	
+	/**
+	 * Método que muestra por pantalla la cuenta de cobro del vehículo
+	 * de acuerdo al tipo y al estado del vehículo
+	 * @param registroCobro
+	 */
 	public void imprimirCuentaCobro(RegistroCobro registroCobro) {
 		
 		System.out.println("========REGISTRO DE SALIDA================");
@@ -139,6 +156,9 @@ public class MenuAplicacion {
 		
 	}
 	
+	/**
+	 * Método que permite matricular un vehículo
+	 */
 	public void menuMatricularVehiculo(){
 		String nroPlaca,rematricular;		
 		Vehiculo vehiculo;
@@ -163,9 +183,7 @@ public class MenuAplicacion {
 			registroVehiculo.ingresarVehiculo(vehiculo);
 			
 		}else {		
-			
-			
-			
+						
 			System.out.println("El vehiculo "+nroPlaca+" ya se encuentra matriculado");
 			System.out.println("Desea Rematricularlo?S/N");
 			rematricular= teclado.next().toUpperCase();		
@@ -187,6 +205,9 @@ public class MenuAplicacion {
 		
 	}	
 	
+	/**
+	 * Método que invoca los demás métodos de acuerdo a la opción seleccionada.
+	 */
 	public void  inicializarMenuPrincipal(){
 		
 		switch (menuInicial()) {		
