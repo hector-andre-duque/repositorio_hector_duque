@@ -139,7 +139,7 @@ public class AdministracionParqueaderoImpl implements AdministracionParqueadero 
 	
 	public String guardarFicheroResidentes(String nombreArchivo) {
 		String mensaje;
-		String ruta = Archivo.RUTA_ARCHIVO_RESIDENTE + nombreArchivo + Archivo.Extension;
+		String ruta = Archivo.RUTA_ARCHIVO_RESIDENTE + nombreArchivo + Archivo.EXTENSION;
 		FileWriter flwriter = null;
 		BufferedWriter bfwriter = null;
 		try { 
